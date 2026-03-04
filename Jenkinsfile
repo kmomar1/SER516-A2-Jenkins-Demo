@@ -28,7 +28,7 @@ pipeline {
 
         stage('Test') {
             steps {
-                dir() {
+                dir("./") {
                     sh 'poetry run pytest tests/ -v -s'
                 }
             }
